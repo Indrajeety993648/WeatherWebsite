@@ -7,15 +7,20 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Video Background -->
+    <video autoplay muted loop id="background-video">
+        <source src="images/cloud.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <!-- Weather Card -->
     <div class="card">
-        <!-- <form class="search"> -->
         <div class="search">
             <input type="text" placeholder="Enter City Name" id="inpuT" spellcheck="false">
             <button id="srch">
-            <img src="images/Search.png" id="image">
-        </button>
+                <img src="images/Search.png" id="image">
+            </button>
         </div>
-        <!-- </form> -->
 
         <div class="weather">
             <img src="images/Clear.png" id="weather-icon">
@@ -23,12 +28,11 @@
             <h2 id="city">New York</h2>
 
             <div class="details">
-
                 <div class="col">
                     <img src="images/Humidity.png">
                     <div>
                         <p id="humidity">50%</p>
-                        <p>humidity</p>
+                        <p>Humidity</p>
                     </div>
                 </div>
                 
@@ -39,13 +43,10 @@
                         <p>Wind Speed</p>
                     </div>
                 </div>
-            
             </div>
-        
         </div>
-    
     </div>
-    <script src="script.js"></script>
 
+    <script src="script.js"></script>
 </body>
 </html>
